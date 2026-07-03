@@ -39,7 +39,7 @@ description: <WAS der Skill tut, 1 Satz>. Verwenden, wenn <WANN/Situation>. Trig
 
 - [ ] <Prüfpunkt 1>
 - [ ] <Prüfpunkt 2>
-- [ ] Registry-Eintrag in `.claude/skills/SKILLS_REGISTRY.md` aktuell
+- [ ] Registry-Eintrag aktuell (lokal `.claude/skills/SKILLS_REGISTRY.md` oder global `~/.claude/skills/SKILLS_REGISTRY.md`)
 ```
 
 ## Hinweise zum Ausfüllen

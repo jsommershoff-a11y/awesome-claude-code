@@ -32,7 +32,7 @@ Faustregel: Lieber eine Runde präziser Fragen als drei Runden Nacharbeit. Aber 
 
 ### Schritt 3: Passende Skills auswählen
 
-Lies `.claude/skills/SKILLS_REGISTRY.md` und wähle die Skills, deren Trigger zum Auftrag passen:
+Lies die Skill-Registry (lokal `.claude/skills/SKILLS_REGISTRY.md`, bei globaler Installation `~/.claude/skills/SKILLS_REGISTRY.md`) und wähle die Skills, deren Trigger zum Auftrag passen:
 
 - 0 Treffer → notieren "keine Spezial-Skills nötig"; wenn die Aufgabe wiederkehrend ist, `/skill-creator` als Follow-up vorschlagen.
 - 1–3 Treffer → diese Skills im Prompt-Block als "zu aktivieren" aufführen.

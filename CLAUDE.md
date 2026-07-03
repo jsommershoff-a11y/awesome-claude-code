@@ -4,7 +4,7 @@
 
 Dieses Repo enthält unter `.claude/skills/` ein Meta-Skill-System (Registry, `skill-creator`, `perfect-prompt`). Es gilt folgende Arbeitsregel:
 
-1. **Vor jeder substanziellen Aufgabe** (mehrschrittig, mehrdeutig oder mit unklarem Zielbild): Lies `.claude/skills/SKILLS_REGISTRY.md` und aktiviere die Skills, deren Trigger zum Auftrag passen. Nenne dem Nutzer kurz, welche Skills du aktivierst und warum.
+1. **Vor jeder substanziellen Aufgabe** (mehrschrittig, mehrdeutig oder mit unklarem Zielbild): Lies die Skill-Registry (lokal `.claude/skills/SKILLS_REGISTRY.md`, bei globaler Installation `~/.claude/skills/SKILLS_REGISTRY.md`) und aktiviere die Skills, deren Trigger zum Auftrag passen. Nenne dem Nutzer kurz, welche Skills du aktivierst und warum.
 2. **Bei vagen oder unterspezifizierten Aufträgen**: Wende zuerst den Skill `perfect-prompt` an — kläre fehlende Informationen durch gebündelte Fragen und lege den Arbeitsauftrag fest, bevor die Arbeit beginnt.
 3. **Bei trivialen Aufgaben** (eindeutig, ein Schritt): Direkt arbeiten, kein Registry-Ritual.
 4. **Wenn ein Bedarf wiederkehrt** und kein Skill ihn abdeckt: Schlage `/skill-creator` vor, um einen neuen Skill anzulegen. Neue Skills werden immer in die Registry eingetragen.

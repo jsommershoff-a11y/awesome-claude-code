@@ -10,15 +10,15 @@ Auf deinem Rechner im Terminal:
 # Repo holen (falls noch nicht vorhanden)
 git clone https://github.com/jsommershoff-a11y/awesome-claude-code.git
 cd awesome-claude-code
-git checkout claude/skills-review-gaps-n29raq
+git checkout main   # solange der PR noch nicht gemerged ist: git checkout claude/skills-review-gaps-n29raq
 
 # Skills global installieren
 mkdir -p ~/.claude/skills
 cp -r .claude/skills/* ~/.claude/skills/
 
-# Aktivierungs-Regel global übernehmen:
-# Inhalt von CLAUDE.md (Abschnitt "Skill-System") an ~/.claude/CLAUDE.md anhängen
-cat CLAUDE.md >> ~/.claude/CLAUDE.md
+# Aktivierungs-Regel global übernehmen — nur den Skill-System-Abschnitt,
+# ohne den projektspezifischen "Repo-Kontext":
+sed '/## Repo-Kontext/,$d' CLAUDE.md >> ~/.claude/CLAUDE.md
 ```
 
 Danach stehen `/skill-creator` und `/perfect-prompt` in **jeder** Claude-Code-Sitzung auf deinem Rechner zur Verfügung.
@@ -27,7 +27,7 @@ Danach stehen `/skill-creator` und `/perfect-prompt` in **jeder** Claude-Code-Si
 
 ```bash
 cp -r .claude/skills <dein-projekt>/.claude/
-cat CLAUDE.md >> <dein-projekt>/CLAUDE.md   # Abschnitt "Repo-Kontext" danach entfernen
+sed '/## Repo-Kontext/,$d' CLAUDE.md >> <dein-projekt>/CLAUDE.md
 ```
 
 ## Nach der Installation: Donna-Skills eintragen

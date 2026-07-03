@@ -24,7 +24,7 @@ Nutze dafür gebündelte Fragen (nicht einzeln nacheinander). Erst wenn alle 6 P
 
 ### Schritt 2: Registry prüfen
 
-Lies `.claude/skills/SKILLS_REGISTRY.md`:
+Lies die Skill-Registry — lokal `.claude/skills/SKILLS_REGISTRY.md`, bei globaler Installation `~/.claude/skills/SKILLS_REGISTRY.md`:
 
 - Existiert bereits ein Skill mit gleichem/überlappendem Zweck? → Vorschlagen, den bestehenden zu **erweitern** statt einen neuen anzulegen.
 - Gibt es in der Registry (Sektion B) einen empfohlenen Community-Skill, der das Problem bereits löst? → Installation vorschlagen statt Eigenbau.
@@ -48,7 +48,7 @@ Regeln:
 
 ### Schritt 4: Registry aktualisieren
 
-Trage den neuen Skill in `.claude/skills/SKILLS_REGISTRY.md` in Sektion A ein: Name, Zweck (1 Satz), Aktivierungs-Trigger.
+Trage den neuen Skill in die Registry ein — in dem Verzeichnisbaum, in dem der Skill angelegt wurde (lokal `.claude/skills/SKILLS_REGISTRY.md`, global `~/.claude/skills/SKILLS_REGISTRY.md`), Sektion A: Name, Zweck (1 Satz), Aktivierungs-Trigger.
 
 ### Schritt 5: Validieren
 
