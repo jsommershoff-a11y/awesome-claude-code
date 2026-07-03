@@ -29,3 +29,5 @@ coverage.xml
 !.claude/commands/
 .claude/commands/*
 !.claude/commands/evaluate-repository.md
+!.claude/skills/
+!.claude/INSTALL_LOKAL.md
